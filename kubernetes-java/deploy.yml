@@ -17,6 +17,7 @@ spec:
       containers:
       - name: tomcat
         image: jfrog.zippyops.com:8082/docker/kuberentes_java/java-app:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
 ---
